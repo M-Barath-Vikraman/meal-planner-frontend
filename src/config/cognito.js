@@ -12,7 +12,7 @@ const cognitoConfig = {
       loginWith: {
         oauth: {
           domain: cognitoDomain,
-          scopes: ['email', 'openid', 'profile'],
+          scopes: ['email', 'openid', 'phone'],
           redirectSignIn: [import.meta.env.VITE_COGNITO_REDIRECT_SIGN_IN || 'http://localhost:5173/auth/callback'],
           redirectSignOut: [import.meta.env.VITE_COGNITO_REDIRECT_SIGN_OUT || 'http://localhost:5173/login'],
           responseType: 'code',
